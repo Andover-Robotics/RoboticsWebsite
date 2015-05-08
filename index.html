@@ -8,10 +8,60 @@
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"/>
 		<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.min.css">
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.2/flickity.pkgd.min.js"></script>
 		<style type="text/css">
+			@import url(http://fonts.googleapis.com/css?family=Dosis);
 
+			.h1, .h2, .h3, .h4, .h5, .h6, .Dosis{
+				font-family: "Dosis", sans-serif;
+			}
+
+			.main-gallery{
+				margin: 0 80px;
+			}
+
+			.gallery-cell{
+				width: 100%;
+				margin-right: 10px;
+			}
+
+			.gallery-cell .caption{
+				position: absolute;
+				bottom: 2px;
+				right: 2px;
+				background: rgba(0, 0, 0, 0.5);
+				color: white;
+				padding: 10px;
+			}
+
+			.flickity-prev-next-button.previous{
+				left: -50px;
+			}
+
+			.flickity-prev-next-button.next{
+				right: -50px;
+			}
+
+			.flickity-prev-next-button{
+				background: transparent;
+			}
+
+			.flickity-prev-next-button:hover{
+				background: transparent;
+			}
+
+			@media screen and (max-width: 768px){
+				.main-gallery{
+					margin: 0;
+				}
+
+				.flickity-prev-next-button.previous, .flickity-prev-next-button.next{
+					display: none;
+				}
+			}
 		</style>
 	</head>
 	<body style="padding: 50px 0 20px;">
@@ -40,16 +90,36 @@
 		</div>
 		<div class="jumbotron">
 			<div class="container">
-				<h1>Welcome to Andover Robotics Club!</h1>
-				<p>Short Description</p>
-				<p><a href="#" class="btn btn-primary btn-lg">Link to About page</a></p>
+				<div class="main-gallery js-flickity" data-flickity-options='{"cellAlign": "left", "contain": true, "imagesLoaded": true}'>
+					<div class="gallery-cell">
+						<p class="h1">Welcome to Andover Robotics Club!</p>
+						<p>Short Description</p>
+						<p><a href="#" class="btn btn-primary btn-lg">Link to About page</a></p>
+					</div>
+					<div class="gallery-cell">
+						<img src="img/Denebola.jpg" style="max-height: 100%; max-width: 100%;">
+						<span class="caption">Caption</span>
+					</div>
+					<div class="gallery-cell">
+						<img src="img/Lux.jpg" style="max-height: 100%; max-width: 100%;">
+						<span class="caption">Caption</span>
+					</div>
+					<div class="gallery-cell">
+						<img src="img/Lucernarium.jpg" style="max-height: 100%; max-width: 100%;">
+						<span class="caption">Caption</span>
+					</div>
+					<div class="gallery-cell">
+						<img src="img/Volcano.jpg" style="max-height: 100%; max-width: 100%;">
+						<span class="caption">Caption</span>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
 					<img src="" style="height: 200px; width: 200px; background: gray">
-					<h2>Heading</h2>
+					<p class="h2">Heading</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -60,7 +130,7 @@
 				</div>
 				<div class="col-md-4">
 					<img src="" style="height: 200px; width: 200px; background: gray">
-					<h2>Heading</h2>
+					<p class="h2">Heading</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -71,7 +141,7 @@
 				</div>
 				<div class="col-md-4">
 					<img src="" style="height: 200px; width: 200px; background: gray">
-					<h2>Heading</h2>
+					<p class="h2">Heading</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
