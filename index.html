@@ -19,6 +19,12 @@
 				font-family: "Dosis", sans-serif;
 			}
 
+			.galleryWrapper{
+				padding: 48px 0;
+				margin-bottom: 30px;
+				background: #EEE;
+			}
+
 			.main-gallery{
 				margin: 0 80px;
 			}
@@ -54,6 +60,10 @@
 			}
 
 			@media screen and (max-width: 768px){
+				.galleryWrapper{
+					padding: 30px 15px;
+				}
+
 				.main-gallery{
 					margin: 0;
 				}
@@ -88,30 +98,33 @@
 				</div>
 			</div>
 		</div>
-		<div class="jumbotron">
-			<div class="container">
-				<div class="main-gallery js-flickity" data-flickity-options='{"cellAlign": "left", "contain": true, "imagesLoaded": true}'>
-					<div class="gallery-cell">
-						<p class="h1">Welcome to Andover Robotics Club!</p>
-						<p>Short Description</p>
-						<p><a href="#" class="btn btn-primary btn-lg">Link to About page</a></p>
-					</div>
-					<div class="gallery-cell">
-						<img src="img/Denebola.jpg" style="max-height: 100%; max-width: 100%;">
-						<span class="caption">Caption</span>
-					</div>
-					<div class="gallery-cell">
-						<img src="img/Lux.jpg" style="max-height: 100%; max-width: 100%;">
-						<span class="caption">Caption</span>
-					</div>
-					<div class="gallery-cell">
-						<img src="img/Lucernarium.jpg" style="max-height: 100%; max-width: 100%;">
-						<span class="caption">Caption</span>
-					</div>
-					<div class="gallery-cell">
-						<img src="img/Volcano.jpg" style="max-height: 100%; max-width: 100%;">
-						<span class="caption">Caption</span>
-					</div>
+		<div class="galleryWrapper container">
+			<div class="main-gallery js-flickity" data-flickity-options='{"cellAlign": "left", "contain": true, "imagesLoaded": true}'>
+				<div class="gallery-cell">
+					<p class="h1">Welcome to Andover Robotics Club!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p><a href="#" class="btn btn-default">Link to About page</a></p>
+				</div>
+				<div class="gallery-cell">
+					<img src="img/Denebola.jpg" style="max-height: 100%; max-width: 100%;">
+					<span class="caption">Caption</span>
+				</div>
+				<div class="gallery-cell">
+					<img src="img/Lux.jpg" style="max-height: 100%; max-width: 100%;">
+					<span class="caption">Caption</span>
+				</div>
+				<div class="gallery-cell">
+					<img src="img/Lucernarium.jpg" style="max-height: 100%; max-width: 100%;">
+					<span class="caption">Caption</span>
+				</div>
+				<div class="gallery-cell">
+					<img src="img/Volcano.jpg" style="max-height: 100%; max-width: 100%;">
+					<span class="caption">Caption</span>
 				</div>
 			</div>
 		</div>
