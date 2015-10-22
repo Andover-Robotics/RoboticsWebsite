@@ -1,29 +1,28 @@
 @import url(http://fonts.googleapis.com/css?family=Dosis);
 
-.h1, .h2, .h3, .h4, .h5, .h6, .Dosis{
+.h1, .h2, .h3, .h4, .h5, .h6, .Dosis {
 	font-family: "Dosis", sans-serif;
 }
 
-.galleryWrapper{
+.galleryWrapper {
 	padding: 48px 0;
 	margin-bottom: 30px;
 	background: #EEE;
 }
 
-.main-gallery{
+.main-gallery {
 	margin: 0 80px;
-	height: 200px;
 }
 
-.gallery-cell{
-	height: 100%;
+.gallery-cell {
 	width: 100%;
-	margin-right: 10px;
+	height: 200px;
+	padding: 10px;
 	background-size: cover;
 	background-position: 50%;
 }
 
-.gallery-cell .caption{
+.gallery-cell .caption {
 	position: absolute;
 	bottom: 2px;
 	right: 2px;
@@ -32,37 +31,37 @@
 	padding: 10px;
 }
 
-.flickity-prev-next-button.previous{
+.flickity-prev-next-button.previous {
 	left: -50px;
 }
 
-.flickity-prev-next-button.next{
+.flickity-prev-next-button.next {
 	right: -50px;
 }
 
-.flickity-prev-next-button{
+.flickity-prev-next-button {
 	background: transparent;
 }
 
-.flickity-prev-next-button:hover{
+.flickity-prev-next-button:hover {
 	background: transparent;
 }
 
-.spotlight img {
+.spotlight img  {
 	display: block;
 	margin: 0 auto;
 }
 
-@media screen and (max-width: 768px){
-	.galleryWrapper{
+@media screen and (max-width: 768px) {
+	.galleryWrapper {
 		padding: 30px 15px;
 	}
 
-	.main-gallery{
+	.main-gallery {
 		margin: 0;
 	}
 
-	.flickity-prev-next-button.previous, .flickity-prev-next-button.next{
+	.flickity-prev-next-button.previous, .flickity-prev-next-button.next {
 		display: none;
 	}
 }
