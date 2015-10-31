@@ -9,6 +9,20 @@ body {
 	font-family: "Dosis", sans-serif;
 }
 
+.row {
+	margin-bottom: 10px;
+}
+
+.spotlight  {
+	text-align: center;
+}
+
+.sponsorLogo {
+	max-width: 100%;
+}
+
+/* Flickity Styles */
+
 .galleryWrapper {
 	padding: 48px 0;
 	margin-bottom: 30px;
@@ -50,10 +64,6 @@ body {
 
 .flickity-prev-next-button:hover {
 	background: transparent;
-}
-
-.spotlight  {
-	text-align: center;
 }
 
 @media screen and (max-width: 768px) {
