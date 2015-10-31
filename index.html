@@ -94,7 +94,15 @@
 			</footer>
 		</div>
 		<script type="text/javascript">
-			$(".main-gallery").flickity();
+			$(".main-gallery").flickity({
+				"wrapAround": true,
+				arrowShape: { // {x0: 20, x1: 50, y1: 30, x2: 0, y2: 10, x3: 100} Trident like arrow
+					x0: 10,
+					x1: 40, y1: 15,
+					x2: 70, y2: 30,
+					x3: 70
+				}
+			});
 		</script>
 	</body>
 </html>
