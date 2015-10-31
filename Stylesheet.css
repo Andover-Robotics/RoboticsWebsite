@@ -1,5 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Dosis);
 
+body {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
 .h1, .h2, .h3, .h4, .h5, .h6, .Dosis {
 	font-family: "Dosis", sans-serif;
 }
@@ -47,9 +52,8 @@
 	background: transparent;
 }
 
-.spotlight img  {
-	display: block;
-	margin: 0 auto;
+.spotlight  {
+	text-align: center;
 }
 
 @media screen and (max-width: 768px) {
